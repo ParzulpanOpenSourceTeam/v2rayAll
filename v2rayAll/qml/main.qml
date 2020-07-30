@@ -1,6 +1,8 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.VirtualKeyboard 2.4
+//import "qrc:qml/views/Page1Form.ui.qml" as Page1Form
+//import "qrc:qml/views/Page2Form.ui.qml" as Page2Form
 
 ApplicationWindow {
     id: window
@@ -14,11 +16,11 @@ ApplicationWindow {
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
 
-        Page1Form {
-        }
+//        Page1Form {
+//        }
 
-        Page2Form {
-        }
+//        Page2Form {
+//        }
     }
 
     footer: TabBar {

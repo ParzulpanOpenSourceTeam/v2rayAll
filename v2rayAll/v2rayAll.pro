@@ -14,9 +14,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        3rdparty/v2ray-core.cpp \
+        core/utils.cpp \
         main.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += \
+    v2rayAll.qrc
 
 TRANSLATIONS += \
     v2rayAll_zh_CN.ts
@@ -31,3 +34,11 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    qml/main.qml \
+    qml/utils/utils.qml \
+    qml/views/Page1Form.ui.qml \
+    qml/views/Page2Form.ui.qml \
+    qml/qtquickcontrols2.conf \
+    v2rayAll_en_US.ts
