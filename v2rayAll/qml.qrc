@@ -9,6 +9,7 @@
         <file>logo@128_128.png</file>
         <file>logo@128_128.ico</file>
         <file>rectangle.qml</file>
+        <file>scripting.qml</file>
     </qresource>
     <qresource prefix="/qml"/>
 </RCC>
