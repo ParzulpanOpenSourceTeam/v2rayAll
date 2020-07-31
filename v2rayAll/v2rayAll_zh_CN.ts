@@ -4,7 +4,7 @@
 <context>
     <name>HomeForm.ui</name>
     <message>
-        <location filename="HomeForm.ui.qml" line="8"/>
+        <location filename="qml/ui/HomeForm.ui.qml" line="9"/>
         <source>首页</source>
         <translation type="unfinished"></translation>
     </message>
@@ -12,12 +12,12 @@
 <context>
     <name>Page1Form.ui</name>
     <message>
-        <location filename="Page1Form.ui.qml" line="8"/>
+        <location filename="qml/ui/Page1Form.ui.qml" line="8"/>
         <source>配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Page1Form.ui.qml" line="11"/>
+        <location filename="qml/ui/Page1Form.ui.qml" line="11"/>
         <source>You are on Page 1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -25,12 +25,12 @@
 <context>
     <name>Page2Form.ui</name>
     <message>
-        <location filename="Page2Form.ui.qml" line="8"/>
+        <location filename="qml/ui/Page2Form.ui.qml" line="8"/>
         <source>关于</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Page2Form.ui.qml" line="11"/>
+        <location filename="qml/ui/Page2Form.ui.qml" line="11"/>
         <source>You are on Page 2.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -38,17 +38,17 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="main.qml" line="9"/>
+        <location filename="qml/main.qml" line="10"/>
         <source>v2rayAll</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="42"/>
+        <location filename="qml/main.qml" line="46"/>
         <source>配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="50"/>
+        <location filename="qml/main.qml" line="54"/>
         <source>关于</source>
         <translation type="unfinished"></translation>
     </message>
@@ -56,7 +56,7 @@
 <context>
     <name>rectangle</name>
     <message>
-        <location filename="rectangle.qml" line="20"/>
+        <location filename="qml/learn/rectangle.qml" line="20"/>
         <source>Rocket</source>
         <translation type="unfinished"></translation>
     </message>

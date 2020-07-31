@@ -31,14 +31,14 @@ set(TS_FILES v2rayAll_zh_CN.ts)
 if(ANDROID)
     add_library(v2rayAll SHARED
       main.cpp
-      qml.qrc
+      v2rayAll.qrc
       ${TS_FILES}
     )
 else()
     add_executable(v2rayAll
       main.cpp
-      qml.qrc
       icon.rc
+      v2rayAll.qrc
       ${TS_FILES}
     )
 endif()
