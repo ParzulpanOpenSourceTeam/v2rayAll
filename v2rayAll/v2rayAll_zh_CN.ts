@@ -36,19 +36,58 @@
     </message>
 </context>
 <context>
+    <name>image</name>
+    <message>
+        <location filename="qml/learn/image.qml" line="20"/>
+        <source></source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qml/learn/image.qml" line="20"/>
+        <source></source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>imageViewer</name>
+    <message>
+        <location filename="qml/learn/imageViewer.qml" line="14"/>
+        <source>图片浏览器</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qml/learn/imageViewer.qml" line="28"/>
+        <source></source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qml/learn/imageViewer.qml" line="28"/>
+        <source></source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>key</name>
+    <message>
+        <location filename="qml/learn/key.qml" line="33"/>
+        <source>text</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>main</name>
     <message>
-        <location filename="qml/main.qml" line="10"/>
+        <location filename="qml/main.qml" line="15"/>
         <source>v2rayAll</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qml/main.qml" line="46"/>
+        <location filename="qml/main.qml" line="51"/>
         <source>配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qml/main.qml" line="54"/>
+        <location filename="qml/main.qml" line="59"/>
         <source>关于</source>
         <translation type="unfinished"></translation>
     </message>
@@ -56,8 +95,21 @@
 <context>
     <name>rectangle</name>
     <message>
-        <location filename="qml/learn/rectangle.qml" line="20"/>
+        <location filename="qml/learn/rectangle.qml" line="41"/>
         <source>Rocket</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qml/learn/rectangle.qml" line="46"/>
+        <source>退出</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>text</name>
+    <message>
+        <location filename="qml/learn/text.qml" line="14"/>
+        <source>Hello Plain Text</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

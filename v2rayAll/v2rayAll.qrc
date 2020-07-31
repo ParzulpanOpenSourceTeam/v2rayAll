@@ -19,5 +19,6 @@
         <file>qml/learn/button.qml</file>
         <file>qml/learn/image.qml</file>
         <file>qml/learn/imageViewer.qml</file>
+        <file>qml/learn/connections.qml</file>
     </qresource>
 </RCC>
