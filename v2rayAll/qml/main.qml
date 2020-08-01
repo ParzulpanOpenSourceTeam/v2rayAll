@@ -14,9 +14,6 @@ ApplicationWindow {
     minimumHeight: 600
     title: qsTr("v2rayAll")
 
-    Material.theme: Material.Dark
-    Material.accent: Material.Purple
-
     header: ToolBar {
         contentHeight: toolButton.implicitHeight
 

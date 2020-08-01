@@ -24,8 +24,8 @@ C2.ApplicationWindow {
         id: stateLabel;
         visible: false;
         anchors.centerIn: parent;
-        z: 3;
         text: qsTr("");
+        z: 3;
     }
 
     Image {
