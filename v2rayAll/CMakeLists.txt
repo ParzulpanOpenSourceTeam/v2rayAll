@@ -27,18 +27,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 COMPONENTS Core Quick LinguistTools REQUIRED)
 
 set(TS_FILES v2rayAll_zh_CN.ts)
+set(RC_FILES icon.rc v2rayAll.qrc)
+set(CPP_CORE_SRC cpp/core/v2rayCore.cpp)
+set(CPP_LEARN_SRC cpp/learn/colorMarker.h cpp/learn/colorMarker.cpp)
 
 if(ANDROID)
     add_library(v2rayAll SHARED
       main.cpp
-      v2rayAll.qrc
       ${TS_FILES}
     )
 else()
     add_executable(v2rayAll
       main.cpp
-      icon.rc
-      v2rayAll.qrc
+      ${CPP_CORE_SRC}
+      ${CPP_LEARN_SRC}
+      ${SRC_LIST}
+      ${RC_FILES}
       ${TS_FILES}
     )
 endif()

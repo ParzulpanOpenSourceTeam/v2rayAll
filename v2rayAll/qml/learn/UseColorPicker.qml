@@ -28,7 +28,7 @@ Rectangle {
         anchors.bottomMargin: 4;
 
         KeyNavigation.right: blueColor;
-        KeyNavigation.tab: blueColor;
+        KeyNavigation.tab: blueCoor;
         // 使用信号处理器
         onColorPicked: {
             coloredText.color = clr;

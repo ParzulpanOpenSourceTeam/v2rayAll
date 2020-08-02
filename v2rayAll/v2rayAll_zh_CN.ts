@@ -10,6 +10,24 @@
     </message>
 </context>
 <context>
+    <name>GetProfilePicture</name>
+    <message>
+        <location filename="qml/learn/GetProfilePicture.qml" line="205"/>
+        <source>打开</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qml/learn/GetProfilePicture.qml" line="213"/>
+        <source>保存</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="qml/learn/GetProfilePicture.qml" line="222"/>
+        <source>取消</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>HandleKey</name>
     <message>
         <location filename="qml/learn/HandleKey.qml" line="23"/>
@@ -96,11 +114,6 @@
 <context>
     <name>imageViewer</name>
     <message>
-        <location filename="qml/learn/imageViewer.qml" line="14"/>
-        <source>图片浏览器</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="qml/learn/imageViewer.qml" line="28"/>
         <source></source>
         <translation></translation>
@@ -125,17 +138,17 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="qml/main.qml" line="15"/>
+        <location filename="qml/main.qml" line="14"/>
         <source>v2rayAll</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qml/main.qml" line="48"/>
+        <location filename="qml/main.qml" line="47"/>
         <source>配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qml/main.qml" line="56"/>
+        <location filename="qml/main.qml" line="55"/>
         <source>关于</source>
         <translation type="unfinished"></translation>
     </message>

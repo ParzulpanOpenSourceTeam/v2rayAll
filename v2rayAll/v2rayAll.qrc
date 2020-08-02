@@ -30,5 +30,9 @@
         <file>qml/learn/DynamicComponent.qml</file>
         <file>qml/learn/progressbar.qml</file>
         <file>qml/learn/tabview.qml</file>
+        <file>qml/learn/DrawRect.qml</file>
+        <file>qml/learn/DrawRectGradient.qml</file>
+        <file>qml/learn/DrawComplexPath.qml</file>
+        <file>qml/learn/GetProfilePicture.qml</file>
     </qresource>
 </RCC>
