@@ -30,6 +30,7 @@ set(TS_FILES v2rayAll_zh_CN.ts)
 set(RC_FILES icon.rc v2rayAll.qrc)
 set(CPP_CORE_SRC cpp/core/v2rayCore.cpp)
 set(CPP_LEARN_SRC cpp/learn/colorMarker.h cpp/learn/colorMarker.cpp)
+set(JS_SRC js/util.js)
 
 if(ANDROID)
     add_library(v2rayAll SHARED
@@ -39,6 +40,7 @@ if(ANDROID)
 else()
     add_executable(v2rayAll
       main.cpp
+      ${JS_SRC}
       ${CPP_CORE_SRC}
       ${CPP_LEARN_SRC}
       ${SRC_LIST}
