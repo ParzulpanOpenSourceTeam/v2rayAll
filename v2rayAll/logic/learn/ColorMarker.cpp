@@ -1,4 +1,4 @@
-#include "colorMarker.h"
+#include "ColorMarker.h"
 
 ColorMaker::ColorMaker():
     m_algorithm(RandomRGB),

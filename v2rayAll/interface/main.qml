@@ -47,7 +47,7 @@ ApplicationWindow {
                 text: qsTr("配置")
                 width: parent.width
                 onClicked: {
-                    stackView.push("qrc:qml/qml/ui/Page1Form.ui.qml")
+                    stackView.push("qrc:interface/interface/ui/Page1Form.ui.qml")
                     drawer.close()
                 }
             }
@@ -55,7 +55,7 @@ ApplicationWindow {
                 text: qsTr("关于")
                 width: parent.width
                 onClicked: {
-                    stackView.push("qrc:qml/qml/ui/Page2Form.ui.qml")
+                    stackView.push("qrc:interface/interface/ui/Page2Form.ui.qml")
                     drawer.close()
                 }
             }
@@ -64,7 +64,7 @@ ApplicationWindow {
 
     StackView {
         id: stackView
-        initialItem: "qrc:qml/qml/ui/HomeForm.ui.qml"
+        initialItem: "qrc:interface/interface/ui/HomeForm.ui.qml"
         anchors.fill: parent
     }
 }

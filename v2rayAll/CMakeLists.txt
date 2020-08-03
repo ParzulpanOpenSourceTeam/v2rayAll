@@ -26,12 +26,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Core Quick LinguistTools REQUIRED)
 
+# 添加所有资源文件
 set(TS_FILES v2rayAll_zh_CN.ts)
 set(RC_FILES icon.rc v2rayAll.qrc)
-#set(CPP_CORE_SRC cpp/core/v2rayCore.cpp)
-#set(CPP_LEARN_SRC cpp/learn/ColorMarker.h cpp/learn/ColorMarker.cpp)
-#set(JS_SRC js/util.js)
-#set(QML_IMPORT_PATH ColorMarkerMain.cpp)
+# 添加logic文件夹下面的所有文件
+include_directories(logic logic/core logic/learn logic/universal)
+aux_source_directory(logic/core CORE)
+aux_source_directory(logic/learn LEARN)
+aux_source_directory(logic/universal UNIVERSAL)
+
 
 if(ANDROID)
     add_library(v2rayAll SHARED
@@ -41,6 +44,9 @@ if(ANDROID)
 else()
     add_executable(v2rayAll
       main.cpp
+      ${CORE}
+      ${LEARN}
+      ${UNIVERSAL}
       ${RC_FILES}
       ${TS_FILES}
     )

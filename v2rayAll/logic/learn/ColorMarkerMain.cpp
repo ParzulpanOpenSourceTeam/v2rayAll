@@ -2,9 +2,9 @@
 #include <QQuickView>
 #include <QtQml>
 #include <QQmlApplicationEngine>
-#include "./cpp/learn/colorMarker.h"
+#include "ColorMarker.h"
 
-int main(int argc, char *argv[]) {
+int Main(int argc, char *argv[]) {
     //  旧模式。注册QML可用的类型
     QGuiApplication app(argc, argv);
     qmlRegisterType<ColorMaker>("Custom.v2rayAll.ColorMarker", 1, 0, "ColorMarker");
