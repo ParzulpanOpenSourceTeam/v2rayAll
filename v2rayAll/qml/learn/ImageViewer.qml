@@ -24,7 +24,6 @@ C2.ApplicationWindow {
         id: stateLabel;
         visible: false;
         anchors.centerIn: parent;
-        text: qsTr("");
         z: 3;
     }
 

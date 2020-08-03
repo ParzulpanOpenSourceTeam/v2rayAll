@@ -2,6 +2,14 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="v2rayAll_zh_CN">
 <context>
+    <name>ColorMarkerMain</name>
+    <message>
+        <location filename="qml/learn/ColorMarkerMain.qml" line="92"/>
+        <source>Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CustomSignal</name>
     <message>
         <location filename="qml/learn/CustomSignal.qml" line="15"/>
@@ -113,6 +121,11 @@
 </context>
 <context>
     <name>imageViewer</name>
+    <message>
+        <location filename="qml/learn/imageViewer.qml" line="14"/>
+        <source>图片浏览器</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="qml/learn/imageViewer.qml" line="28"/>
         <source></source>

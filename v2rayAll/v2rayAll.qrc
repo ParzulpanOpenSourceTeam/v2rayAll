@@ -34,5 +34,19 @@
         <file>qml/learn/DrawRectGradient.qml</file>
         <file>qml/learn/DrawComplexPath.qml</file>
         <file>qml/learn/GetProfilePicture.qml</file>
+        <file>qml/learn/ColorMarkerMain.qml</file>
+        <file>qml/learn/ChangeColorMain.qml</file>
+        <file>qml/learn/PropertyAnimationStandAlone.qml</file>
+        <file>qml/learn/PropertyAnimationSignalHandler.qml</file>
+        <file>qml/learn/PropertyAnimationOnProperty.qml</file>
+        <file>qml/learn/PropertyAnimationSwap.qml</file>
+        <file>qml/learn/NumberAnimationToCircle.qml</file>
+        <file>qml/learn/ColorAnimation.qml</file>
+        <file>qml/learn/RotationAnimation.qml</file>
+        <file>qml/learn/PathAnimation.qml</file>
+        <file>qml/learn/SpringAnimation.qml</file>
+        <file>qml/learn/ParallelAnimation.qml</file>
+        <file>qml/learn/SequentialAnimation.qml</file>
+        <file>qml/learn/StateText.qml</file>
     </qresource>
 </RCC>
