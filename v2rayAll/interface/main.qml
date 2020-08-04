@@ -1,70 +1,62 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.12
+import QtQuick 2.15
+import QtQuick.Controls 2.5
 
 ApplicationWindow {
-    id: window
     visible: true
-//    visibility: ApplicationWindow.Maximized
-//    modality: Qt.NonModal
-//    flags: Qt.Dialog
-    width: 900
-    height: 600
-    minimumWidth: 900
-    minimumHeight: 600
+    width: 640
+    height: 480
     title: qsTr("v2rayAll")
 
-    header: ToolBar {
-        contentHeight: toolButton.implicitHeight
-
-        ToolButton {
-            id: toolButton
-            text: stackView.depth > 1 ? "\u25C0" : "\u2630"
-            font.pixelSize: Qt.application.font.pixelSize * 1.6
-            onClicked: {
-                if (stackView.depth > 1) {
-                    stackView.pop()
-                } else {
-                    drawer.open()
-                }
-            }
-        }
-
-        Label {
-            text: stackView.currentItem.title
-            anchors.centerIn: parent
-        }
-    }
-
-    Drawer {
-        id: drawer
-        width: window.width * 0.2
-        height: window.height
-
-        Column {
-            anchors.fill: parent
-
-            ItemDelegate {
-                text: qsTr("配置")
-                width: parent.width
-                onClicked: {
-                    stackView.push("qrc:interface/interface/ui/Page1Form.ui.qml")
-                    drawer.close()
-                }
-            }
-            ItemDelegate {
-                text: qsTr("关于")
-                width: parent.width
-                onClicked: {
-                    stackView.push("qrc:interface/interface/ui/Page2Form.ui.qml")
-                    drawer.close()
-                }
-            }
-        }
-    }
-
-    StackView {
-        id: stackView
-        initialItem: "qrc:interface/interface/ui/HomeForm.ui.qml"
+    SwipeView {
+        id: swipeView
         anchors.fill: parent
+        currentIndex: tabBar.currentIndex
+
+//        Page1Form {
+//        }
+
+//        Page2Form {
+//        }
+    }
+
+    footer: TabBar {
+        id: tabBar
+        currentIndex: swipeView.currentIndex
+
+        Image {
+            id: serverImage;
+            width: 128;
+            height: 128;
+            source: "qrc:/assets/assets/server@128_128.png"
+//            text: qsTr("服务列表");
+        }
+        Image {
+            id: parameterImage;
+            width: 128;
+            height: 128;
+            source: "qrc:/assets/assets/server@128_128.png"
+//            text: qsTr("参数设置");
+        }
+        Image {
+            id: preferenceImage;
+            width: 128;
+            height: 128;
+            source: "qrc:/assets/assets/server@128_128.png"
+//            text: qsTr("偏好设置");
+        }
+        Image {
+            id: updateImage;
+            width: 128;
+            height: 128;
+            source: "qrc:/assets/assets/server@128_128.png"
+//            text: qsTr("检查更新");
+        }
+        Image {
+            id: resetImage;
+            width: 128;
+            height: 128;
+            source: "qrc:/assets/assets/server@128_128.png"
+//            text: qsTr("重启服务")
+        }
     }
 }

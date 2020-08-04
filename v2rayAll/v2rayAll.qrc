@@ -2,7 +2,6 @@
     <qresource prefix="/assets">
         <file>assets/logo@128_128.ico</file>
         <file>assets/logo@128_128.png</file>
-        <file>qtquickcontrols2.conf</file>
         <file>assets/powerOff@64_64.png</file>
         <file>assets/powerOff@128_128.png</file>
         <file>assets/reset@64_64.png</file>
@@ -13,15 +12,26 @@
         <file>assets/setting@128_128.png.png</file>
         <file>assets/update@64_64.png</file>
         <file>assets/update@128_128.png</file>
+        <file>assets/battery.png</file>
+        <file>assets/Boss0.png</file>
+        <file>assets/Boss1.png</file>
+        <file>assets/Boss2.png</file>
+        <file>assets/Boss3.png</file>
+        <file>assets/Boss4.png</file>
+        <file>assets/Boss5.png</file>
+        <file>assets/Boss6.png</file>
+        <file>assets/Boss7.png</file>
+        <file>assets/bullet.png</file>
+        <file>assets/test.mp3</file>
     </qresource>
     <qresource prefix="/interface">
         <file>interface/js/util.js</file>
-        <file>interface/learn/button.qml</file>
+        <file>interface/learn/Button.qml</file>
         <file>interface/learn/ChangeColorMain.qml</file>
         <file>interface/learn/ColorAnimation.qml</file>
         <file>interface/learn/ColorMarkerMain.qml</file>
         <file>interface/learn/ColorPicker.qml</file>
-        <file>interface/learn/connections.qml</file>
+        <file>interface/learn/Connections.qml</file>
         <file>interface/learn/CountDown.qml</file>
         <file>interface/learn/CustomSignal.qml</file>
         <file>interface/learn/DrawComplexPath.qml</file>
@@ -31,34 +41,47 @@
         <file>interface/learn/GetProfilePicture.qml</file>
         <file>interface/learn/HandleKey.qml</file>
         <file>interface/learn/HandleMouse.qml</file>
-        <file>interface/learn/image.qml</file>
-        <file>interface/learn/imageViewer.qml</file>
-        <file>interface/learn/item.qml</file>
-        <file>interface/learn/key.qml</file>
-        <file>interface/learn/loader.qml</file>
+        <file>interface/learn/Image.qml</file>
+        <file>interface/learn/ImageViewer.qml</file>
+        <file>interface/learn/Item.qml</file>
+        <file>interface/learn/Key.qml</file>
+        <file>interface/learn/Loader.qml</file>
         <file>interface/learn/NumberAnimationToCircle.qml</file>
         <file>interface/learn/ParallelAnimation.qml</file>
         <file>interface/learn/PathAnimation.qml</file>
-        <file>interface/learn/progressbar.qml</file>
+        <file>interface/learn/Progressbar.qml</file>
         <file>interface/learn/PropertyAnimationOnProperty.qml</file>
         <file>interface/learn/PropertyAnimationSignalHandler.qml</file>
         <file>interface/learn/PropertyAnimationStandAlone.qml</file>
         <file>interface/learn/PropertyAnimationSwap.qml</file>
-        <file>interface/learn/rectangle.qml</file>
+        <file>interface/learn/Rectangle.qml</file>
         <file>interface/learn/RotationAnimation.qml</file>
-        <file>interface/learn/scripting.qml</file>
+        <file>interface/learn/Scripting.qml</file>
         <file>interface/learn/SequentialAnimation.qml</file>
         <file>interface/learn/SpringAnimation.qml</file>
         <file>interface/learn/StateText.qml</file>
-        <file>interface/learn/tabview.qml</file>
-        <file>interface/learn/text.qml</file>
+        <file>interface/learn/Tabview.qml</file>
+        <file>interface/learn/Text.qml</file>
         <file>interface/learn/UseColorPicker.qml</file>
-        <file>interface/ui/HomeForm.ui.qml</file>
         <file>interface/ui/Page1Form.ui.qml</file>
         <file>interface/ui/Page2Form.ui.qml</file>
         <file>interface/universal/CustomButton.qml</file>
         <file>interface/util/CustomButton.qml</file>
         <file>interface/main.qml</file>
-        <file>interface/qtquickcontrols2.conf</file>
+        <file>interface/learn/colorMaker.js</file>
+        <file>interface/learn/ChangeScriptRect.qml</file>
+        <file>interface/learn/TransitionRect.qml</file>
+        <file>interface/learn/LinkText.qml</file>
+        <file>interface/learn/Behavior.qml</file>
+        <file>interface/learn/ParentAnimation.qml</file>
+        <file>interface/learn/BubbleGame.qml</file>
+        <file>interface/learn/ListViewExample.qml</file>
+        <file>interface/learn/ListViewHeaderExample.qml</file>
+        <file>interface/learn/TableViewExample.qml</file>
+        <file>interface/learn/SimpleMusic.qml</file>
+        <file>interface/learn/FlatButton.qml</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
     </qresource>
 </RCC>

@@ -1,11 +1,15 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.12
+import QtQuick 2.15
+import QtQuick.Controls 2.5
 
 Page {
-    width: 900
-    height: 600
+    width: 600
+    height: 400
 
-    title: qsTr("配置")
+    header: Label {
+        text: qsTr("Page 1")
+        font.pixelSize: Qt.application.font.pixelSize * 2
+        padding: 10
+    }
 
     Label {
         text: qsTr("You are on Page 1.")

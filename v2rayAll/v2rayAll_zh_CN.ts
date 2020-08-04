@@ -10,6 +10,19 @@
     </message>
 </context>
 <context>
+    <name>Connections</name>
+    <message>
+        <location filename="interface/learn/Connections.qml" line="13"/>
+        <source>text one</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="interface/learn/Connections.qml" line="23"/>
+        <source>text two</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CustomSignal</name>
     <message>
         <location filename="interface/learn/CustomSignal.qml" line="15"/>
@@ -44,10 +57,15 @@
     </message>
 </context>
 <context>
-    <name>HomeForm.ui</name>
+    <name>Image</name>
     <message>
-        <location filename="interface/ui/HomeForm.ui.qml" line="9"/>
-        <source>首页</source>
+        <location filename="interface/learn/Image.qml" line="20"/>
+        <source></source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="interface/learn/Image.qml" line="20"/>
+        <source></source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -58,16 +76,45 @@
         <source></source>
         <translation></translation>
     </message>
+    <message>
+        <location filename="interface/learn/ImageViewer.qml" line="14"/>
+        <source>图片浏览器</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Key</name>
+    <message>
+        <location filename="interface/learn/Key.qml" line="33"/>
+        <source>text</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LinkText</name>
+    <message>
+        <location filename="interface/learn/LinkText.qml" line="12"/>
+        <source>I&apos;m web link.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Loader</name>
+    <message>
+        <location filename="interface/learn/Loader.qml" line="14"/>
+        <source>Hello World!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Page1Form.ui</name>
     <message>
-        <location filename="interface/ui/Page1Form.ui.qml" line="8"/>
-        <source>配置</source>
+        <location filename="interface/ui/Page1Form.ui.qml" line="9"/>
+        <source>Page 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="interface/ui/Page1Form.ui.qml" line="11"/>
+        <location filename="interface/ui/Page1Form.ui.qml" line="15"/>
         <source>You are on Page 1.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -75,13 +122,26 @@
 <context>
     <name>Page2Form.ui</name>
     <message>
-        <location filename="interface/ui/Page2Form.ui.qml" line="8"/>
-        <source>关于</source>
+        <location filename="interface/ui/Page2Form.ui.qml" line="9"/>
+        <source>Page 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="interface/ui/Page2Form.ui.qml" line="11"/>
+        <location filename="interface/ui/Page2Form.ui.qml" line="15"/>
         <source>You are on Page 2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Rectangle</name>
+    <message>
+        <location filename="interface/learn/Rectangle.qml" line="41"/>
+        <source>Rocket</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="interface/learn/Rectangle.qml" line="46"/>
+        <source>退出</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -94,23 +154,18 @@
     </message>
 </context>
 <context>
-    <name>UseColorPicker</name>
+    <name>Text</name>
     <message>
-        <location filename="interface/learn/UseColorPicker.qml" line="14"/>
-        <source>Color Text</source>
+        <location filename="interface/learn/Text.qml" line="14"/>
+        <source>Hello Plain Text</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>connections</name>
+    <name>UseColorPicker</name>
     <message>
-        <location filename="interface/learn/connections.qml" line="13"/>
-        <source>text one</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="interface/learn/connections.qml" line="23"/>
-        <source>text two</source>
+        <location filename="interface/learn/UseColorPicker.qml" line="14"/>
+        <source>Color Text</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -125,68 +180,26 @@
 <context>
     <name>imageViewer</name>
     <message>
-        <location filename="interface/learn/imageViewer.qml" line="14"/>
-        <source>图片浏览器</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="qml/learn/imageViewer.qml" line="28"/>
         <source></source>
         <translation></translation>
     </message>
 </context>
 <context>
-    <name>key</name>
-    <message>
-        <location filename="interface/learn/key.qml" line="33"/>
-        <source>text</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>loader</name>
-    <message>
-        <location filename="interface/learn/loader.qml" line="14"/>
-        <source>Hello World!</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>main</name>
     <message>
-        <location filename="interface/main.qml" line="14"/>
+        <location filename="interface/main.qml" line="8"/>
         <source>v2rayAll</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="interface/main.qml" line="47"/>
-        <source>配置</source>
+        <location filename="interface/main.qml" line="27"/>
+        <source>服务器</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="interface/main.qml" line="55"/>
-        <source>关于</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>rectangle</name>
-    <message>
-        <location filename="interface/learn/rectangle.qml" line="41"/>
-        <source>Rocket</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="interface/learn/rectangle.qml" line="46"/>
-        <source>退出</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>text</name>
-    <message>
-        <location filename="interface/learn/text.qml" line="14"/>
-        <source>Hello Plain Text</source>
+        <location filename="interface/main.qml" line="30"/>
+        <source>偏好设置</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
