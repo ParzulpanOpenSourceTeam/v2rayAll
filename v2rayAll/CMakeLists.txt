@@ -24,15 +24,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #    endif()
 #endif()
 
-find_package(Qt5 COMPONENTS Core Quick LinguistTools REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Core Quick LinguistTools REQUIRED)
 
 # 添加所有资源文件
 set(TS_FILES v2rayAll_zh_CN.ts)
 set(RC_FILES icon.rc v2rayAll.qrc)
 # 添加logic文件夹下面的所有文件
-include_directories(logic logic/core logic/learn logic/universal)
+include_directories(logic logic/core logic/_learn logic/universal)
 aux_source_directory(logic/core CORE)
-aux_source_directory(logic/learn LEARN)
+aux_source_directory(logic/_learn LEARN)
 aux_source_directory(logic/universal UNIVERSAL)
 
 
@@ -55,6 +55,6 @@ endif()
 target_compile_definitions(v2rayAll
   PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(v2rayAll
-  PRIVATE Qt5::Core Qt5::Quick)
+  PRIVATE Qt5::Core Qt5::Quick Qt5::Widgets)
 
 qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})

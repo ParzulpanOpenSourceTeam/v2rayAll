@@ -39,6 +39,10 @@ Rectangle {
             }
         }
 
+        onError: {
+            console.log(errorString);
+        }
+
     }
 
     Row {

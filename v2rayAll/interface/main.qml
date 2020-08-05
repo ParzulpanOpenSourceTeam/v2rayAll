@@ -1,62 +1,83 @@
 import QtQuick 2.15
-import QtQuick.Controls 2.5
+import QtQuick.Controls 2.15
 
 ApplicationWindow {
-    visible: true
-    width: 640
-    height: 480
-    title: qsTr("v2rayAll")
+    id: window;
+    visible: true;
+    width: 800;
+    height: 600;
+    minimumWidth: 800;
+    minimumHeight: 600;
+    title: qsTr("v2rayAll - 2020/08")
 
-    SwipeView {
-        id: swipeView
-        anchors.fill: parent
-        currentIndex: tabBar.currentIndex
+    header: ToolBar {
+        contentHeight: toolButton.implicitHeight;
 
-//        Page1Form {
-//        }
+        ToolButton {
+            id: toolButton;
+            text: stackView.depth > 1 ? "\u25C0" : "\u2630";
+            font.pixelSize: Qt.application.font.pixelSize * 1.6;
+            onClicked: {
+                if (stackView.depth > 1) {
+                    stackView.pop();
+                } else {
+                    drawer.open();
+                }
+            }
+        }
 
-//        Page2Form {
-//        }
+        Label {
+            text: stackView.currentItem.title;
+            anchors.centerIn: parent;
+        }
     }
 
-    footer: TabBar {
-        id: tabBar
-        currentIndex: swipeView.currentIndex
+    Drawer {
+        id: drawer;
+        width: window.width * 0.20;
+        height: window.height;
 
-        Image {
-            id: serverImage;
-            width: 128;
-            height: 128;
-            source: "qrc:/assets/assets/server@128_128.png"
-//            text: qsTr("服务列表");
+        Column {
+            anchors.fill: parent;
+
+            ItemDelegate {
+                text: qsTr("服务列表");
+                width: parent.width;
+                onClicked: {
+                    stackView.push("ui/ServerForm.qml");
+                    drawer.close();
+                }
+            }
+            ItemDelegate {
+                text: qsTr("参数配置");
+                width: parent.width;
+                onClicked: {
+                    stackView.push("ui/ParameterForm.qml");
+                    drawer.close();
+                }
+            }
+            ItemDelegate {
+                text: qsTr("偏好设置");
+                width: parent.width;
+                onClicked: {
+                    stackView.push("ui/PreferenceForm.qml");
+                    drawer.close();
+                }
+            }
+            ItemDelegate {
+                text: qsTr("关于软件");
+                width: parent.width;
+                onClicked: {
+                    stackView.push("ui/AboutForm.qml");
+                    drawer.close();
+                }
+            }
         }
-        Image {
-            id: parameterImage;
-            width: 128;
-            height: 128;
-            source: "qrc:/assets/assets/server@128_128.png"
-//            text: qsTr("参数设置");
-        }
-        Image {
-            id: preferenceImage;
-            width: 128;
-            height: 128;
-            source: "qrc:/assets/assets/server@128_128.png"
-//            text: qsTr("偏好设置");
-        }
-        Image {
-            id: updateImage;
-            width: 128;
-            height: 128;
-            source: "qrc:/assets/assets/server@128_128.png"
-//            text: qsTr("检查更新");
-        }
-        Image {
-            id: resetImage;
-            width: 128;
-            height: 128;
-            source: "qrc:/assets/assets/server@128_128.png"
-//            text: qsTr("重启服务")
-        }
+    }
+
+    StackView {
+        id: stackView
+        initialItem: "ui/ServerForm.qml"
+        anchors.fill: parent
     }
 }
